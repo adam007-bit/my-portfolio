@@ -3,54 +3,96 @@
 <head>
   <title>MY Portfolio</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
     body {
       background-color: #87cefa;
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
     h1 {
-      font-size: 36px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 10px;
     }
     p, li {
       text-align: left;
-      margin: 0 auto;
+      margin: 0 auto 15px auto;
       max-width: 800px;
+      line-height: 1.6;
+      color: #555;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 40px;
+      margin-bottom: 20px;
     }
     img {
-      width: 200px;
-      height: 150px;
-      margin: 5px;
+      width: 220px;
+      height: 160px;
+      margin: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .nav-links {
+      text-align: center;
+      margin-bottom: 20px;
     }
     .nav-links a {
+      text-decoration: none;
+      color: #007bff;
       margin: 0 10px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-links a:hover {
+      background-color: #007bff;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1>ADAM TIJJANI ADAM</h1>
+  <div class="container">
+    <h1>Adam Tijjani Adam</h1>
 
-  <p>Hi, I'M Adam Tijjani Adam! I'm passionate about many things, and here are a few of my interests and hobbies:</p>
-  <div class="nav-links">
-    [ <a href="index.html">Home</a> ] 
-    [ <a href="registration.html">Customer Registration Form</a> ] 
-    [ <a href="hobbies.html">Hobbies</a> ]
+    <p>Hi, I'm Adam Tijjani Adam! I'm passionate about many things, and here are a few of my interests and hobbies:</p>
+    <div class="nav-links">
+      [ <a href="index.html">Home</a> ] 
+      [ <a href="registration.html">Customer Registration Form</a> ] 
+      [ <a href="hobbies.html">Hobbies</a> ]
+    </div>
+
+    <ul>
+      <li>Exploring new Arduino projects</li>
+      <li>Reading science fiction articles</li>
+      <li>Building Quadcopters</li>
+    </ul>
+
+    <p>I chose to study software engineering because I'm fascinated by technology and its potential to solve real-world problems. Building software allows me to express my creativity and problem-solving skills while contributing to innovative solutions.</p>
+
+    <p>My goals and ambitions include becoming proficient in various programming languages and frameworks, contributing to open-source projects, and ultimately making a positive impact in the tech industry.</p>
+
+    <!-- Images from local folder -->
+    <img src="images/arduino.jpg" alt="Arduino">
+    <img src="images/reading.jpg" alt="Reading">
+    <img src="images/drone.jpg" alt="Drone">
   </div>
-
-  <ul>
-    <li>Exploring new Arduino projects</li>
-    <li>Reading science fiction articles</li>
-    <li>Building Quadcopters</li>
-  </ul>
-
-  <p>I chose to study software engineering because I'm fascinated by technology and its potential to solve real-world problems. Building software allows me to express my creativity and problem-solving skills while contributing to innovative solutions.</p>
-
-  <p>My goals and ambitions include becoming proficient in various programming languages and frameworks, contributing to open-source projects, and ultimately making a positive impact in the tech industry.</p>
-
-  <!-- Images from local folder -->
-  <img src="images/arduino.jpg" alt="Arduino">
-  <img src="images/reading.jpg" alt="Reading">
-  <img src="images/drone.jpg" alt="Drone">
-
 </body>
 </html>
+
