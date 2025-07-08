@@ -3,58 +3,102 @@
 <head>
   <title>My Hobbies</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
     body {
-      background-color: #fff8dc;
+      background-color: #87cefa;
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
     h1 {
       text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
     .nav-links {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    img {
-      float: left;
-      margin: 10px;
-      width: 200px;
-      height: 150px;
+    .nav-links a {
+      text-decoration: none;
+      color: #007bff;
+      margin: 0 10px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-links a:hover {
+      background-color: #007bff;
+      color: white;
     }
     .hobby-section {
-      clear: both;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      overflow: auto;
+      border-radius: 12px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hobby-section img {
+      float: left;
+      margin-right: 20px;
+      width: 220px;
+      height: 160px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .hobby-section img:hover {
+      transform: scale(1.05);
+    }
+    .hobby-section h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .hobby-section p {
+      color: #555;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h1>My Hobbies</h1>
+  <div class="container">
+    <h1>My Hobbies</h1>
 
-  <div class="nav-links">
-    [ <a href="index.html">Home</a> ] 
-    [ <a href="registration.html">Customer Registration Form</a> ] 
-    [ <a href="hobbies.html">Hobbies</a> ]
+    <div class="nav-links">
+      [ <a href="index.html">Home</a> ] 
+      [ <a href="registration.html">Customer Registration Form</a> ] 
+      [ <a href="hobbies.html">Hobbies</a> ]
+    </div>
+
+    <div class="hobby-section">
+      <img src="images/arduino.jpg" alt="Arduino Projects">
+      <h2>Arduino Projects</h2>
+      <p>I enjoy exploring and building various Arduino projects, from automated gadgets to robotics. This hobby helps me improve my coding and electronics skills while creating fun and useful tools.</p>
+    </div>
+
+    <div class="hobby-section">
+      <img src="images/reading.jpg" alt="Reading">
+      <h2>Reading</h2>
+      <p>Reading has been one of my favorite hobbies for many years. There’s something incredibly rewarding about diving into a good book and exploring new worlds, ideas, and perspectives through words on a page.</p>
+      <p>I enjoy spending time discovering different genres, from science fiction and fantasy to self-development and technology books. Whether it’s learning something new, escaping into a thrilling story, or gaining inspiration from great authors, reading allows me to relax, grow, and connect with knowledge and imagination in a special way.</p>
+    </div>
+
+    <div class="hobby-section">
+      <img src="images/drone.jpg" alt="Quadcopters">
+      <h2>Building Quadcopters</h2>
+      <p>Building and flying quadcopters is an exciting and challenging hobby. I enjoy assembling different drone parts, tuning their performance, and taking them for test flights to capture stunning aerial footage or race with friends.</p>
+    </div>
   </div>
-
-  <div class="hobby-section">
-    <img src="images/arduino.jpg" alt="Arduino Projects">
-    <h2>Arduino Projects</h2>
-    <p>I enjoy exploring and building various Arduino projects, from automated gadgets to robotics. This hobby helps me improve my coding and electronics skills while creating fun and useful tools.</p>
-  </div>
-
-  <div class="hobby-section">
-    <img src="images/reading.jpg" alt="Reading">
-    <h2>Reading</h2>
-    <p>Reading has been one of my favorite hobbies for many years. There’s something incredibly rewarding about diving into a good book and exploring new worlds, ideas, and perspectives through words on a page.</p>
-    <p>I enjoy spending time discovering different genres, from science fiction and fantasy to self-development and technology books. Whether it’s learning something new, escaping into a thrilling story, or gaining inspiration from great authors, reading allows me to relax, grow, and connect with knowledge and imagination in a special way.</p>
-  </div>
-
-  <div class="hobby-section">
-    <img src="images/drone.jpg" alt="Quadcopters">
-    <h2>Building Quadcopters</h2>
-    <p>Building and flying quadcopters is an exciting and challenging hobby. I enjoy assembling different drone parts, tuning their performance, and taking them for test flights to capture stunning aerial footage or race with friends.</p>
-  </div>
-
 </body>
 </html>
-
